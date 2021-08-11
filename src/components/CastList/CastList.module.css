@@ -1,0 +1,25 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.img {
+  width: 100%;
+  height: 300px;
+
+  object-fit: cover;
+}
+
+.name {
+  color: black;
+  font-weight: 500;
+}
+
+.character {
+  font-size: 12px;
+}
+
+.title {
+  color: black;
+}

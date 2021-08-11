@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { useRouteMatch, useHistory } from 'react-router-dom';
 import { getTrendingMovies } from '../../services/api';
 import MovieList from '../MovieList/MovieList';
+import Container from '../Container/Container';
+import Section from '../Section/Section';
 
 export default function HomePage() {
   const [movies, setMovies] = useState(null);
@@ -13,8 +15,16 @@ export default function HomePage() {
       history.push('/');
     }
 
-    getTrendingMovies().then(setMovies);
+    getTrendingMovies()
+      .then(setMovies)
+      .catch(error => console.error(error.message));
   }, [history, isExact]);
 
-  return <MovieList movies={movies} />;
+  return (
+    <Section>
+      <Container>
+        <MovieList movies={movies} />
+      </Container>
+    </Section>
+  );
 }

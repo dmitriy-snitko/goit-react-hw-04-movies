@@ -1,5 +1,17 @@
 @import 'modern-normalize/modern-normalize.css';
 
+:root {
+  --primery-text-color: #757575;
+  --title-color: #363636;
+  --accent-color: #59bdff;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  color: var(--primery-text-color);
+}
+
 h1,
 h2,
 h3,
@@ -14,6 +26,8 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 img {

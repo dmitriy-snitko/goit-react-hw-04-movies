@@ -1,0 +1,55 @@
+.go_back {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 1px solid var(--primery-text-color);
+  border-radius: 5px;
+
+  color: var(--primery-text-color);
+}
+
+.go_back:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.movie_container {
+  display: flex;
+}
+
+.description {
+  margin-left: 15px;
+}
+
+.title,
+.overview,
+.genres {
+  margin-bottom: 10px;
+  color: var(--title-color);
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primery-text-color);
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+}
+
+.activeLink {
+  color: var(--accent-color);
+}
+
+.poster {
+  width: 342px;
+  height: 513px;
+
+  object-fit: cover;
+}

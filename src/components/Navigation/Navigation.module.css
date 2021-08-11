@@ -1,8 +1,12 @@
 .link {
   display: inline-block;
   padding: 5px;
+  text-decoration: none;
+  color: var(--primery-text-color);
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .activeLink {
-  color: red;
+  color: var(--accent-color);
 }

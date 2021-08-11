@@ -1,7 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-import Container from './components/Container/Container';
 import AppBar from './components/AppBar/AppBar';
+import { Spiner } from './components/Spiner/Spiner';
 import './App.css';
 
 const HomePage = lazy(() =>
@@ -22,7 +22,7 @@ const App = () => (
   <div className="app">
     <AppBar />
 
-    <Suspense fallback={'load '}>
+    <Suspense fallback={<Spiner />}>
       <Switch>
         <Route path="/" exact>
           <HomePage />
